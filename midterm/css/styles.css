@@ -30,6 +30,7 @@ main h2 {
 
 main p {
     font-size: 0.8rem;
+    padding-bottom: 1rem;
 }
 
 main h3 {
@@ -42,4 +43,10 @@ main ul {
     list-style-type:disc;
     margin-left: 1rem;
     line-height: 1;
+    padding-bottom: 1rem;
+}
+
+main h4 {
+    font-size: 1.45rem;
+    padding-bottom: 0.5rem;
 }
