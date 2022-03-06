@@ -35,8 +35,8 @@ body {
     /* padding-bottom: 1rem; */
     /* font-weight: bold; */
     position:absolute;
-    left: 51%;
-    top: 65.5%;
+    left: 50%;
+    top: 69%;
     transform: translate(-50%, -50%);
 }
 
@@ -100,6 +100,7 @@ main ul {
     border: 1px solid black;
     padding-top: 30px;
     padding-left: 20px;
+    margin-right: 10px;
 }
 
 form div label {
@@ -112,6 +113,17 @@ form div input {
     margin-bottom: 20px;
 }
 
+.field1 {
+    height: 25px;
+    border: 1px solid lightgray;
+    width: 930px;
+}
+
+.field2 {
+    height: 100px;
+    width: 930px;
+}
+
 .formlabel {
     font-size: 1.5rem;
     margin-bottom: 15px;
@@ -119,6 +131,17 @@ form div input {
 
 .radio label, .radio input {
     display: inline;
+}
+
+form div button {
+    font-size: 0.7rem;
+    text-transform: uppercase;
+    background-color: transparent;
+    color: black;
+    border: 1px solid black;
+    width: 55px;
+    height: 35px;
+    margin-bottom: 20px;
 }
 
 footer {
