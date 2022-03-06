@@ -132,13 +132,15 @@ form div input {
 .field1 {
     height: 25px;
     border: 1px solid lightgray;
-    width: 930px;
+    width: 920px;
+    padding-left: 10px;
 }
 
 /* field2 class will have a specific height and width */
 .field2 {
     height: 100px;
-    width: 930px;
+    width: 910px;
+    padding: 10px;
 }
 
 /* make the question text its own size and give it a margin below */
