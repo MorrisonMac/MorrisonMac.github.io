@@ -1,3 +1,4 @@
+/* set up the body with base settings that will apply to the whole webpage */
 body {
     background-color: #aad4cf;
     font-family: Arial, Helvetica, sans-serif ;
@@ -6,12 +7,14 @@ body {
     line-height: 1.5;
 }
 
+/* designate a width for the wrapper to keep all content within, make it a light blue color */
 .wrapper {
     max-width: 1000px;
     margin: 0 auto;
     background-color: #D4e9e7;
 }
 
+/* used to clear float status after any element with this class */
 .clearfix::after {
     content: "";
     display: block;
@@ -24,11 +27,13 @@ body {
     color: white;
 }
 
+/* set width of the image and change its display to block */
 .headerimage {
     width: 1000px;
     display: block;
 }
 
+/* set the font size of the text, and arrange it on top of the image above */
 .heading h1 {
     font-size: 4rem;
     line-height: 2;
@@ -40,6 +45,7 @@ body {
     transform: translate(-50%, -50%);
 }
 
+/* arrange links along one line adjacent to each other across the page, give some room above and below, remove default decoration, make uppercase */
 .box {
     color: black;
     font-size: 1.6rem;
@@ -55,6 +61,7 @@ body {
     margin-bottom: 40px;
 }
 
+/* give this link borders on either side to separate the 3 links */
 .special {
     border-left: 1px solid black;
     border-right: 1px solid black;
@@ -65,12 +72,14 @@ main {
     padding-left: 10px;
 }
 
+/* give a size to this heading and a bit of margin on the bottom */
 main h2 {
     font-size: 2rem;
     line-height: 1.5;
-    padding-bottom: 0.5rem;
+    margin-bottom: 0.5rem;
 }
 
+/* set width of image and make it float so the text will wrap around it */
 .starfish {
     width: 230px;
     float: left;
@@ -78,24 +87,28 @@ main h2 {
     margin-bottom: 10px;
 }
 
+/* font size for main paragraph text, some margin on the bottom to space it from the content below */
 main p {
     font-size: 1rem;
-    padding-bottom: 1rem;
+    margin-bottom: 1rem;
 }
 
+/* make all h3s this size and have a bit of margin below */
 main h3 {
     font-size: 1.75rem;
-    padding-bottom: 0.5rem;
+    margin-bottom: 0.5rem;
 }
 
+/* set size of bullet list, make bullets into filled circles (discs), leave a margin at the bottom */
 main ul {
     font-size: 1rem;
     list-style-type:disc;
     margin-left: 1rem;
     line-height: 1;
-    padding-bottom: 1rem;
+    margin-bottom: 1rem;
 }
 
+/* give the forms area a border with some padding and margin to arrange its appearance on the page */
 .forms form {
     border: 1px solid black;
     padding-top: 30px;
@@ -103,36 +116,43 @@ main ul {
     margin-right: 10px;
 }
 
+/* make all labels display as block so they get their own lines */
 form div label {
     display: block;
 }
 
+/* make all inputs display as block so they get their own lines, plus add a margin below */
 form div input {
     /* color: white; */
     display: block;
     margin-bottom: 20px;
 }
 
+/* both field1 classes will be a certain height and width and have a lightgray border */
 .field1 {
     height: 25px;
     border: 1px solid lightgray;
     width: 930px;
 }
 
+/* field2 class will have a specific height and width */
 .field2 {
     height: 100px;
     width: 930px;
 }
 
+/* make the question text its own size and give it a margin below */
 .formlabel {
     font-size: 1.5rem;
     margin-bottom: 15px;
 }
 
+/* make the labels and inputs for the radio form appear all horizontally adjacent */
 .radio label, .radio input {
     display: inline;
 }
 
+/* customize the appearance of the button, its size, and make it transparent so the color of the background shows through; add a margin below */
 form div button {
     font-size: 0.7rem;
     text-transform: uppercase;
@@ -144,6 +164,7 @@ form div button {
     margin-bottom: 20px;
 }
 
+/* customize the footer to be the right size and appear at the right position on the page, on its own line */
 footer {
     color: black;
     text-align: right;
