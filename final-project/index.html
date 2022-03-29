@@ -5,12 +5,33 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MTM6130 Final Project - mace0061</title>
+    <script src="https://kit.fontawesome.com/79a220ee73.js" crossorigin="anonymous"></script>
     <link href="css/styles.css" rel="stylesheet">
 </head>
 <body>
     <div class="wrapper">
+        <!-- header containing a logo image, a set of links to elsewhere on the page, and a search bar with a magnifying glass button -->
         <header>
-            <img src="images/logo.png" alt="logo">
+            <img class="logo" src="images/logo.png" alt="logo">
+
+            <nav>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Team</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+
+            <form action= "" method="get">
+                <div>
+                    <input type="text" id="search" name="search" placeholder="Search">
+                </div>
+                <div>
+                    <button type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+                </div>
+            </form>
         </header>
     </div>
 </body>
