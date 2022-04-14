@@ -111,7 +111,7 @@ nav ul li a{
 }
 
 .searchbar input {
-    width: calc(100% - 20px - 80px - 28px);
+    width: calc(100% - 20px - 80px - 30px);
     height: 2.5em;
     font-size: 2em;
     float: left;
@@ -179,6 +179,7 @@ nav ul li a{
     height: 20%;
     margin-top: 2%;
     font-size: 3vw;
+    color: #222;
     background-color: #c78c06;
     border: none;
 }
