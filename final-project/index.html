@@ -6,40 +6,45 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MTM6130 Final Project - mace0061</title>
     <script src="https://kit.fontawesome.com/79a220ee73.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
     <link href="css/styles.css" rel="stylesheet">
 </head>
 <body>
-    <div class="wrapper">
-        <!-- header containing a logo image, a set of links to elsewhere on the page, and a search bar with a magnifying glass button -->
-        <header>
-            <img class="logo" src="images/logo.png" alt="logo">
+    <!-- header containing a logo image, a set of links to elsewhere on the page, and a search bar with a magnifying glass button -->
+    <header class="clearfix">
+        <img class="logo top" src="images/logo.png" alt="logo">
 
-            <nav>
-                <ul>
-                    <li><a href="#home">Home</a></li>
-                    <li><a href="#about">About Us</a></li>
-                    <li><a href="#services">Services</a></li>
-                    <li><a href="#team">Team</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
-            </nav>
+        <nav>
+            <ul>
+                <li><a class="top thisspecific1" href="#home">Home</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#team">Team</a></li>
+                <li><a class="thisspecific2" href="#contact">Contact</a></li>
+            </ul>
+        </nav>
 
-            <form action="#" method="get">
-                <div>
-                    <input type="text" id="search" name="search" placeholder="Search">
-                </div>
-                <div>
-                    <button type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
-                </div>
-            </form>
-        </header>
+        <form class="searchbar" action="#" method="get">
+            <div>
+                <input type="text" id="search" name="search" placeholder="Search">
+            </div>
+            <div>
+                <button type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+            </div>
+        </form>
+    </header>
 
+    <div class="wrapper2">
         <!-- main title of site followed by a paragraph and a button that says "connect with us", all on top of a banner image -->
         <div class="home" id="home">
             <img class="banner" src="images/main-banner.jpg" alt="main-banner">
-            <h1>Welcome to Three Star Media</h1>
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Temporibus id repellendus exercitationem accusamus, reprehenderit ea cupiditate nesciunt! Quibusdam, possimus cum. Repudiandae libero rerum labore in sit veniam repellendus maxime facilis.</p>
-            <button type="button">Connect with us <i class="fa-solid fa-caret-right"></i></button>
+            <div class="text-block1">
+                <h1>Welcome to Three Star Media</h1>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Temporibus id repellendus exercitationem accusamus, reprehenderit ea cupiditate nesciunt! Quibusdam, possimus cum. Repudiandae libero rerum labore in sit veniam repellendus maxime facilis.</p>
+                <button type="button">Connect with us <i class="fa-solid fa-caret-right"></i></button>
+            </div>
         </div>
 
         <!-- about section of the site, includes a photo followed by a heading and two paragraphs -->
