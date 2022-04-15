@@ -59,6 +59,7 @@ html {
 
 body {
     max-width: 1200px;
+    margin: 0 auto;
 }
 
 /* clearfix always applied to the parent element containing float(s) */
@@ -216,6 +217,7 @@ nav ul li a{
     margin-top: 2%;
 }
 
+/* our services styling, arranging each element to take up the whole width of the page and show up one after the other */
 .our-services {
     background-color: white;
     width: 100%;
@@ -268,6 +270,11 @@ nav ul li a{
 
 /* specific modifiers for the "our vision" area, cropping the image and placing the text on top of it */
 .vision {
+    background-color: white;
+    margin-left: 2%;
+    margin-right: 2%;
+    margin-bottom: 2%;
+    line-height: 1.5;
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr;
@@ -296,6 +303,32 @@ nav ul li a{
     border: #c78c06 solid 1px;
 }
 
+.vision h3 {
+    font-size: 4vw;
+    font-weight: bold;
+    margin-top: 4%;
+    margin-left: 2%;
+    margin-bottom: 2%;
+}
+
+.vision p {
+    font-size: 1.75vw;
+    margin-left: 2%;
+    margin-bottom: 2%;
+}
+
+.vision button {
+    font-size: 2.5vw;
+    color: white;
+    background-color: #222;
+    border: none;
+    margin-left: 2%;
+    margin-bottom: 2%;
+    width: 25vw;
+    height: 10vw;
+}
+
+/* styling for our team section, giving each team member photo and info the same amount of space */
 .team {
     width: 100%;
     background-color: white;
@@ -342,6 +375,7 @@ nav ul li a{
     padding-bottom: 2%;
 }
 
+/* styling for the contact section, including a form, hours of operation, and an embedded map */
 .contact {
     width: 96%;
     background-color: white;
@@ -422,6 +456,7 @@ nav ul li a{
     width: 100%;
 }
 
+/* styling for the footer */
 footer {
     background-color: #222;
     color: #c78c06;
@@ -439,7 +474,7 @@ footer {
     header {
         padding-top: 20px;
         padding-bottom: 20px;
-        margin-bottom: 10px;
+        margin-bottom: 0;
     }
 
     .top {
@@ -586,5 +621,366 @@ footer {
         font-size: 0.55em;
         margin-top: 0;
         margin-bottom: 10px;
+    }
+
+    /* our services area styling for 760px. arrange the five sections into 2 rows, 1st has 2 sections 2nd has 3, evenly divided. once again our vision has its own area and rules */
+    .our-services {
+        background-color: white;
+        width: auto;
+        padding-left: 10%;
+        padding-right: 10%;
+        padding-top: 30px;
+    }
+    
+    .our-services h2 {
+        margin-left: 10px;
+        margin-bottom: 10px;
+        padding-top: 0;
+        font-size: 2em;
+        font-weight: bold;
+    }
+    
+    .services {
+        background-color: #ffe6ac;
+        margin: 0;
+        line-height: 1.5;
+    }
+    
+    .services img {
+        width: 100%;
+    }
+    
+    .servrow1 {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: 1fr;
+        margin-bottom: 10px;
+    }
+
+    .digital {
+        grid-column: 1/2;
+        grid-row: 1/1;
+        margin-right: 5px;
+    }
+
+    .marketing {
+        grid-column: 2/2;
+        grid-row: 1/1;
+        margin-left: 5px;
+    }
+
+    .servrow1 h3 {
+        font-size: 1em;
+    }
+
+    .servrow1 p {
+        font-size: 0.5em;
+
+    }
+
+    .servrow1 button {
+        font-size: 0.75em;
+        width: 96%;
+        height: 50px;
+        margin-right: 2%;
+    }
+
+    .servrow2 {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: 1fr;
+        margin-bottom: 10px;
+    }
+
+    .video {
+        grid-column: 1/2;
+        grid-row: 1/1;
+        margin-right: 6px;
+    }
+
+    .web {
+        grid-column: 2/3;
+        grid-row: 1/1;
+        margin-right: 3px;
+        margin-left: 3px;
+    }
+
+    .print {
+        grid-column: 3/3;
+        grid-row: 1/1;
+        margin-left: 6px;
+    }
+
+    .servrow2 h3 {
+        font-size: 1em;
+    }
+
+    .servrow2 p {
+        font-size: 0.5em;
+
+    }
+
+    .servrow2 button {
+        font-size: 0.75em;
+        width: 96%;
+        height: 50px;
+        margin-right: 2%;
+    }
+    
+    /* specific modifiers for the "our vision" area, cropping the image and placing the text on top of it */
+    .vision {
+        background-color: white;
+        margin-bottom: 10px;
+        line-height: 1.5;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+        margin-left: 0;
+        margin-right: 0;
+    }
+    
+    .vision-image {
+        grid-column: 1/1;
+        grid-row: 1/1;
+        width: 100%;
+        height: 150px;
+        object-fit: cover;
+    }
+    
+    .text-block2 {
+        grid-column: 1/1;
+        grid-row: 1/1;
+        padding-left: 10%;
+        padding-right: 10%;
+    }
+    
+    .text-block2 h3, .text-block2 p{
+        color: white;
+    }
+    
+    .text-block2 button {
+        border: #c78c06 solid 1px;
+    }
+    
+    .vision h3 {
+        font-size: 1em;
+        font-weight: bold;
+        margin-top: 20px;
+        margin-left: 10px;
+        margin-bottom: 10px;
+    }
+    
+    .vision p {
+        font-size: 0.5em;
+        margin-left: 10px;
+        margin-bottom: 10px;
+    }
+    
+    .vision button {
+        font-size: 0.75em;
+        color: white;
+        background-color: #222;
+        border: none;
+        margin-left: 10px;
+        margin-bottom: 0;
+        width: 125px;
+        height: 50px;
+    }
+
+    /* styling for the team section at 760px, arranging them in a grid with the first picture on the left row first column and the second picture on the right row second column  */
+    .team {
+        padding-left: 10%;
+        padding-right: 10%;
+        width: auto;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+    
+    .team h2 {
+        font-size: 2em;
+        font-weight: bold;
+        margin-left: 10px;
+        margin-top: 0;
+    }
+    
+    .team-member {
+        background-color: #ffe6ac;
+        margin-left: 10px;
+        margin-right: 10px;
+        margin-bottom: 0;
+        line-height: 1.5;
+    }
+    
+    .team-member img {
+        width: 100%;
+    }
+    
+    .team-member h3 {
+        font-size: 1.25em;
+        font-weight: bold;
+        margin-top: 10px;
+        margin-left: 10px;
+    }
+    
+    .team-member h4 {
+        font-size: 0.75em;
+        font-weight: bold;
+        margin-left: 10px;
+    }
+    
+    .team-member p {
+        border-top: #c78c06 solid 4px;
+        padding-top: 10px;
+        font-size: 0.5em;
+        margin-left: 10px;
+        margin-right: 10px;
+        padding-bottom: 0;
+    }
+
+    .john {
+        display: grid;
+        grid-template-rows: 1fr;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .john img {
+        grid-row: 1/1;
+        grid-column: 1/2;
+    }
+
+    .john text-blockjohn {
+        grid-row: 1/1;
+        grid-column: 2/2;
+    }
+
+    .bob {
+        display: grid;
+        grid-template-rows: 1fr;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .bob img {
+        grid-row: 1/1;
+        grid-column: 2/2;
+    }
+
+    .bob text-blockbob {
+        grid-row: 1/1;
+        grid-column: 1/2;
+    }
+
+    /* styling for the contact section at 760px, making it into a grid of 2 rows and 2 columns*/
+    .contact {
+        padding-left: 10%;
+        padding-right: 10%;
+        width: auto;
+        margin: 0;
+    }
+    
+    .contact h2 {
+        font-size: 2em;
+        font-weight: bold;
+        margin-bottom: 20px;
+    }
+    
+    .contactgrid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+    }
+
+    .send-message {
+        grid-row: 1/2;
+        grid-column: 1/2;
+        margin-right: 20px;
+    }
+
+    .location {
+        grid-row: 1/2;
+        grid-column: 2/2;
+    }
+
+    .hours {
+        grid-row: 2/2;
+        grid-column: 1/3;
+
+        margin-top: 40px;
+    }
+
+    .contact h3 {
+        font-size: 1em;
+        font-weight: bold;
+        margin-bottom: 10px;
+    }
+    
+    .contact h4 {
+        font-size: 0.75em;
+        margin-bottom: 5px;
+        margin-top: 5px;
+    }
+    
+    .contact input {
+        width: 100%;
+        height: 2em;
+        border: #222 solid 2px;
+        font-size: 0.5em;
+    }
+    
+    .bigbox textarea {
+        resize: none;
+        height: 10em;
+        width: 100%;
+        border: #222 solid 2px;
+        font-size: 0.5em;
+    }
+    
+    .contact button {
+        margin-top: 10px;
+        width: 50px;
+        height: 25px;
+        color: #c78c06;
+        background-color: #222;
+        border: none;
+        font-size: 0.75em;
+        margin-bottom: 0;
+    }
+    
+    .hours table, .hours th, .hours td {   
+        border: black 2px solid
+    }
+    
+    .hours table {
+        width: 100%;
+        margin-bottom: 0;
+    }
+    
+    .hours th, .hours td {
+        height: 30px;
+        vertical-align: middle;
+        font-size: 0.5em;
+    }
+    
+    .hours th {
+        background-color: #ffe6ac;
+    }
+    
+    .hours td {
+        background-color: white;
+        padding-left: 10px;
+        /* padding-top: 2%; */
+    }
+    
+    .location iframe {
+        width: 100%;
+        height: 100%;
+    }
+
+    /* styling for footer at 760px */
+    footer {
+        line-height: 3;
+        padding-top: 10px;
+        padding-left: 10%;
+        padding-bottom: 10px;
+        font-size: 0.5em;
     }
 }
