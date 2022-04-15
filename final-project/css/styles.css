@@ -57,6 +57,10 @@ html {
     font-family: 'Open Sans', sans-serif;
 }
 
+body {
+    max-width: 1200px;
+}
+
 /* clearfix always applied to the parent element containing float(s) */
 /* add the clearfix class to the parent element containing a float, so that it clears the float for the sake of the rest of the page */
 .clearfix::after {
@@ -131,7 +135,7 @@ nav ul li a{
 }
 
 .wrapper2 {
-    max-width: 100%;
+    max-width: 1200px;
     margin: 0 auto;
 }
 
@@ -421,4 +425,126 @@ footer {
     padding-left: 2%;
     padding-bottom: 2%;
     font-size: 1.75vw;
+}
+
+/* a series of changes to the styling at 760 width and up */
+@media screen and (min-width: 760px) {
+    
+    /* changes to the nav bar at the top of the page */
+    header {
+        padding-top: 20px;
+        padding-bottom: 20px;
+        margin-bottom: 10px;
+    }
+
+    .top {
+        background-color: #c78c06;
+        color: #222;
+        display: inline;
+        padding-bottom: 0;
+        width: auto;
+    }
+    
+    .logo {
+        border-top: none;
+        border-left: none;
+        padding-right: 0%;
+        padding-top: 0;
+        margin-left: 10%;
+        float: left;
+        width: 50px;
+    }
+
+    nav ul li a{
+        float: left;
+        color: #c78c06;
+        width: auto;
+        text-decoration: none;
+        font-size: 0.25em;
+        margin-top: 5px;
+        padding: 10px;
+        padding-left: 20px;
+        padding-right: 20px; 
+    }
+
+    .thisspecific1 {
+        margin: 0;
+        margin-left: 50px;
+        margin-top: 5px;
+        padding-bottom: 10px;
+    }
+    
+    .searchbar input {
+        margin: 0;
+        width: 100px;
+        height: 15px;
+        font-size: 0.25em;
+        float: left;
+        margin-top: 7.5px;
+    }
+    
+    .searchbar button {
+        font-size: 0.5em;
+        color: #c78c06;
+        background-color: #222;
+        border: 1px solid #c78c06;
+        width: 20px;
+        height: 20px;
+        float: left;
+        margin-top: 7.5px;
+    }
+
+    /* changes to the home area */
+    .home {
+        position: relative;
+        text-align: left;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+    }
+    
+    .banner {
+        width: 100%;
+        height: 300px;
+        grid-column: 1/1;
+        grid-row: 1/1;
+    }
+    
+    .text-block1 {
+        line-height: 1.4;
+        background-color: rgba(0,0,0,0.6);
+        color: white;
+        grid-column: 1/1;
+        grid-row: 1/1;
+        margin-top: 25px;
+        margin-bottom: 25px;
+        margin-left: 10%;
+        margin-right: 10%;
+        /* padding-top: 6.5%;
+        padding-bottom: 6.5%; */
+        padding-left: 10px;
+        /* position: absolute;
+        bottom: 50%; */
+    }
+    
+    .home h1 {
+        font-size: 3em;
+        font-weight: bold;
+        margin-bottom: 25px;
+    }
+    
+    .home p {
+        font-size: 0.5em;
+    }
+    
+    .home button {
+        width: 130px;
+        height: 50px;
+        font-size: 0.75em;
+        color: #222;
+        background-color: #c78c06;
+        border: none;
+    }
+
+    /* next comes the about section. make it a grid with repeat(2, 1fr)*/
 }
