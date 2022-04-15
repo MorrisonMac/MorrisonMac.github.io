@@ -60,6 +60,7 @@ html {
 body {
     max-width: 1200px;
     margin: 0 auto;
+    background-color: white;
 }
 
 /* clearfix always applied to the parent element containing float(s) */
