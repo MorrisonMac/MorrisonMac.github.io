@@ -69,6 +69,7 @@ body {
     clear: left;
 }
 
+/* header section styling, including logo, nav links, and search bar/button */
 header {
     background-color: #222;
     text-align: center;
@@ -139,6 +140,7 @@ nav ul li a{
     margin: 0 auto;
 }
 
+/* styling for the home section, including the banner image and welcome message + button */
 .home {
     position: relative;
     text-align: left;
@@ -176,11 +178,13 @@ nav ul li a{
 
 .home p {
     font-size: 2.2vw;
+    margin-bottom: 6vw;
 }
 
-.home button {
-    width: 35%;
-    height: 20%;
+.home .button {
+    text-decoration: none;
+    text-align: center;
+    padding: 4vw;
     margin-top: 2%;
     font-size: 3vw;
     color: #222;
@@ -188,6 +192,7 @@ nav ul li a{
     border: none;
 }
 
+/* styling for the about section, including the about us image, the header, and the paragraph */
 .about {
     background-color: #ffe6ac;
     padding-left: 2%;
@@ -535,16 +540,51 @@ footer {
     
     .home p {
         font-size: 0.5em;
+        margin-bottom: 20px;
     }
     
-    .home button {
-        width: 130px;
-        height: 50px;
+    .home .button {
+        padding: 20px;
         font-size: 0.75em;
         color: #222;
         background-color: #c78c06;
-        border: none;
     }
 
     /* next comes the about section. make it a grid with repeat(2, 1fr)*/
+    /* styling for the about section at this screen size, making it into a grid so that the picture is beside the text  */
+    .about {
+        background-color: #ffe6ac;
+        padding-left: 10%;
+        padding-right: 10%;
+        line-height: 1.5;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: 1;
+        padding-top: 10px;
+    }
+    
+    .about-us {
+        padding-top: 0;
+        width: 350px;
+        grid-column: 1/2;
+        grid-row: 1/1;
+    }
+
+    .about-us-content {
+        grid-column: 2/2;
+        grid-row: 1/1;
+        margin-left: 10px;
+    }
+    
+    .about h2 {
+        font-size: 1.75em;
+        font-weight: bold;
+        margin-top: 0;
+    }
+    
+    .about p {
+        font-size: 0.55em;
+        margin-top: 0;
+        margin-bottom: 10px;
+    }
 }
