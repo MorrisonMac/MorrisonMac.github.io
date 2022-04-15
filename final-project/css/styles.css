@@ -586,29 +586,24 @@ footer {
         background-color: #c78c06;
     }
 
-    /* next comes the about section. make it a grid with repeat(2, 1fr)*/
-    /* styling for the about section at this screen size, making it into a grid so that the picture is beside the text  */
+    /* next comes the about section. make it a flexbox*/
+    /* styling for the about section at this screen size */
     .about {
         background-color: #ffe6ac;
         padding-left: 10%;
         padding-right: 10%;
         line-height: 1.5;
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: 1fr;
         padding-top: 10px;
+        padding-bottom: 10px;
+        display: flex;
     }
     
     .about-us {
         padding-top: 0;
-        width: 350px;
-        grid-column: 1/2;
-        grid-row: 1/1;
+        width: 285px;
     }
 
     .about-us-content {
-        grid-column: 2/2;
-        grid-row: 1/1;
         margin-left: 10px;
     }
     
