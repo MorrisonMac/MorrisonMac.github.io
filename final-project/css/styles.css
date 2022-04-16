@@ -213,6 +213,7 @@ nav ul li a{
     padding-left: 2%;
     padding-right: 2%;
     line-height: 1.5;
+    padding-bottom: 2%;
 }
 
 .about-us {
@@ -420,6 +421,7 @@ nav ul li a{
     height: 3vw;
     border: #222 solid 2px;
     font-size: 1.75vw;
+    padding: 2px;
 }
 
 .bigbox textarea {
@@ -428,6 +430,7 @@ nav ul li a{
     width: 100%;
     border: #222 solid 2px;
     font-size: 1.75vw;
+    padding: 2px;
 }
 
 .contact button {
