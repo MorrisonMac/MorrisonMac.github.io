@@ -63,6 +63,12 @@ body {
     background-color: white;
 }
 
+button {
+    padding: 0;
+    margin: 0;
+    border: none;
+}
+
 /* clearfix always applied to the parent element containing float(s) */
 /* add the clearfix class to the parent element containing a float, so that it clears the float for the sake of the rest of the page */
 .clearfix::after {
