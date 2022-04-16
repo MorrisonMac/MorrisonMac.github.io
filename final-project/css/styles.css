@@ -392,7 +392,7 @@ nav ul li a{
 
 /* styling for the contact section, including a form, hours of operation, and an embedded map */
 .contact {
-    width: 96%;
+    width: auto;
     background-color: white;
     margin-left: 2%;
     margin-right: 2%;
@@ -417,7 +417,7 @@ nav ul li a{
 }
 
 .contact input {
-    width: 100%;
+    width: calc(100% - 8px);
     height: 3vw;
     border: #222 solid 2px;
     font-size: 1.75vw;
@@ -427,7 +427,7 @@ nav ul li a{
 .bigbox textarea {
     resize: none;
     height: 15vw;
-    width: 100%;
+    width: calc(100% - 8px);
     border: #222 solid 2px;
     font-size: 1.75vw;
     padding: 2px;
