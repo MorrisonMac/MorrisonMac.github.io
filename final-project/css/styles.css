@@ -535,6 +535,8 @@ footer {
         font-size: 0.25em;
         float: left;
         margin-top: 7.5px;
+        margin-bottom: 0;
+        padding: 2.5px;
     }
     
     .searchbar button {
