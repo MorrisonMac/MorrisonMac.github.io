@@ -123,24 +123,31 @@ nav ul li a{
     margin-bottom: 1em;
 }
 
+.searchbar {
+    
+    margin-left: 2%;
+    margin-right: 2%;
+    width: auto;
+}
+
 .searchbar input {
-    width: calc(100% - 20px - 80px - 30px);
-    height: 2.5em;
-    font-size: 2em;
+    width: calc(100% - 9vw);
+    height: 5vw;
+    font-size: 5vw;
     float: left;
-    margin-bottom: 20px;
-    margin-left: 20px;
+    margin-bottom: 2%;
+    padding: 1vw;
+    border: 0;
 }
 
 .searchbar button {
     float: left;
-    font-size: 3em;
+    font-size: 5vw;
     color: #c78c06;
     background-color: #222;
     border: 1px solid #c78c06;
-    width: 80px;
-    height: 85px;
-    margin-right: 20px;
+    width: 7vw;
+    height: 7vw;
 }
 
 .wrapper2 {
